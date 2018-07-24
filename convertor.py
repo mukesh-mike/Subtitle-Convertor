@@ -211,7 +211,7 @@ def translator():
 def convertstring(str,source_langcode,dest_langcode):
     with requests.Session() as s:
         temp = str.decode('UTF-8')
-        url = "https://www.googleapis.com/language/translate/v2?key=<key>&q="+temp+"&source="+source_langcode+"&target="+dest_langcode
+        url = "https://www.googleapis.com/language/translate/v2?key=YOUR_API_KEY&q="+temp+"&source="+source_langcode+"&target="+dest_langcode
         f = requests.get(url, verify=False)
         a = f.text.encode('UTF-8')
         par = a[71:len(a) - 22]
