@@ -9,7 +9,7 @@ import os
 import operator
 
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "give path to your jason file" [refer](https://cloud.google.com/docs/authentication/production)
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "give_path_to_your_jason_file"
 
 
 
@@ -31,7 +31,7 @@ def create_widget_in_frame1():
 
 
 def select_fromfile():
-    file = askopenfilename(initialdir='C:\Users\mukes\Downloads\subtitle_translator-master', title='Select File',
+    file = askopenfilename(initialdir='path_to_directory', title='Select File',
                                 filetypes=[("SRT Files", "*.srt")])
     from_file.set(file)
 
@@ -119,7 +119,7 @@ def create_widget_in_frame2(choices,lang_detect):
     tolang.set("")
     global dest_path
     dest_path = StringVar()
-    dest_path.set("C:\Users\mukes\Downloads\subtitle_translator-master")
+    dest_path.set("default_destination_path")
     global name
     name = StringVar()
     name.set("")
@@ -153,7 +153,7 @@ def create_widget_in_frame2(choices,lang_detect):
 
 
 def sel_destfolder():
-    file = askdirectory(initialdir='C:\Users\mukes\Downloads\subtitle_translator-master', title='Select Target File Folder')
+    file = askdirectory(initialdir='default_destination_path', title='Select Target File Folder')
     dest_path.set(file)
 
 
@@ -211,7 +211,7 @@ def translator():
 def convertstring(str,source_langcode,dest_langcode):
     with requests.Session() as s:
         temp = str.decode('UTF-8')
-        url = "https://www.googleapis.com/language/translate/v2?key=AIzaSyAs5AEATk8CWfzAgkL4ErRC9nf0WOpCYl8&q="+temp+"&source="+source_langcode+"&target="+dest_langcode
+        url = "https://www.googleapis.com/language/translate/v2?key=<key>&q="+temp+"&source="+source_langcode+"&target="+dest_langcode
         f = requests.get(url, verify=False)
         a = f.text.encode('UTF-8')
         par = a[71:len(a) - 22]
