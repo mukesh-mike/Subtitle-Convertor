@@ -1,0 +1,25 @@
+1
+00:00:00,000 --> 00:00:04,002
+ahoj gramatikové dnes budeme
+mluvit o nepravidelném množném čísle
+
+2
+00:00:04,002 --> 00:00:09,087
+předtím jsem řekl, že pokud budete mít
+každé anglické slovo nějaké podstatné jméno řekne slovo
+
+3
+00:00:09,087 --> 00:00:15,175
+psa a vy jste na něj konec
+jako byste dostali slovo psů a to je
+
+4
+00:00:16,075 --> 00:00:23,075
+jak tvoříte množné číslo ve všech případech
+bylo lhát, že se to ukáže
+
+5
+00:00:23,075 --> 00:00:25,138
+Angličtina je trochu komplikovanější
+než to
+
