@@ -1,5 +1,5 @@
 # Subtitle-Convertor
-A simple python application to convert a subtitle/text in a particular language to 104 other languages provided by google.
+A simple python application to convert a subtitle(.srt file) in a particular language to 104 other languages provided by google.
 
 
 Steps:
